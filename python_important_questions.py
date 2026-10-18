@@ -21,3 +21,37 @@ def reversed(input):
   return reversed_string
 
 print(reversed("kumar bharath "))
+
+# finding duplicate
+# most efficient
+lst=[1,2,4,3,2]
+
+def is_duplicate(lst):
+  seen=set()
+  for i in range(len(lst)):
+    if lst[i] in seen:
+      return True
+    seen.add(lst[i])
+
+print(is_duplicate(lst))
+
+# less efficiant
+lst=sorted(lst)
+j=1
+for i in range(len(lst)):
+  if j < len(lst):
+    if lst[i]==lst[j]:
+      print(True)
+    j=j+1
+
+
+
+
+
+
+
+
+
+
+
+
