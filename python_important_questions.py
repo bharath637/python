@@ -1,3 +1,5 @@
+# Two sum problem
+
 lst=[1,2,3,4,5,6,7]
 target=13
 def two_sum(lst,target):
@@ -11,7 +13,7 @@ def two_sum(lst,target):
 
 print(two_sum(lst,target))
 
-
+#reverse words
 def reversed(input):
   reversed_string=""
   for ch in input.split():
